@@ -1,43 +1,142 @@
-# Astro Starter Kit: Minimal
+# HSL Innovations
 
-```sh
-npm create astro@latest -- --template minimal
+Official website for **HSL Innovations**, an independent software studio focused on building thoughtfully designed apps for Apple platforms.
+
+---
+
+## About
+
+HSL Innovations creates apps that prioritize:
+
+- 🍎 Native Apple experiences
+- 🔒 Privacy-first design
+- ♿ Accessibility
+- 🎨 Clean, modern interfaces
+- ⚡ Performance and simplicity
+
+The website serves as the central hub for HSL Innovations, providing:
+
+- App information
+- Privacy Policies
+- Accessibility Statements
+- Support documentation
+- Contact information
+
+---
+
+## Current Apps
+
+### 🌺 Flora Endless Word Search
+
+An endlessly replayable word search game designed with relaxation and accessibility in mind.
+
+Features include:
+
+- Endless puzzle generation
+- Multiple categories
+- Progress tracking
+- Streaks and statistics
+- Light & Dark Mode
+- Accessibility support
+
+Status: **In Development**
+
+---
+
+### 👟 KickzBrary
+
+A sneaker collection app built for collectors.
+
+Features include:
+
+- Sneaker inventory management
+- Collection statistics
+- Import & Export
+- Beautiful gallery views
+- Native Apple design
+
+Status: **Coming Soon**
+
+---
+
+## Built With
+
+- Astro
+- TypeScript
+- HTML5
+- CSS3
+
+---
+
+## Development
+
+Clone the repository:
+
+```bash
+git clone git@github.com:hass516/hslinnovations.com.git
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Install dependencies:
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+```bash
+npm install
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+Run the development server:
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+```bash
+npm run dev
+```
 
-Any static assets, like images, can be placed in the `public/` directory.
+Build for production:
 
-## 🧞 Commands
+```bash
+npm run build
+```
 
-All commands are run from the root of the project, from a terminal:
+Preview the production build:
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+```bash
+npm run preview
+```
 
-## 👀 Want to learn more?
+---
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## Project Structure
+
+```
+src/
+├── components/
+├── layouts/
+├── pages/
+├── scripts/
+└── styles/
+
+public/
+├── icons/
+└── favicon.svg
+```
+
+---
+
+## Roadmap
+
+- [x] Company website
+- [x] About page
+- [x] Apps catalog
+- [x] Privacy Policies
+- [x] Accessibility pages
+- [x] Support Center
+- [x] Contact page
+- [ ] Flora App Store launch
+- [ ] KickzBrary launch
+- [ ] Blog / Release Notes
+- [ ] App Store download badges
+
+---
+
+## License
+
+Copyright © 2026 HSL Innovations.
+
+All rights reserved.
