@@ -1,0 +1,35 @@
+---
+interface Props {
+  title: string;
+  subtitle: string;
+  icon: string;
+  href: string;
+  alt?: string;
+}
+
+const {
+  title,
+  subtitle,
+  icon,
+  href,
+  alt = `${title} app icon`,
+} = Astro.props;
+---
+
+<a href={href} class="app-link">
+
+    <img
+        src={icon}
+        alt={alt}
+        width="56"
+        height="56"
+    />
+
+    <div>
+
+        <strong>{title}</strong>
+        <span>{subtitle}</span>
+
+    </div>
+
+</a>

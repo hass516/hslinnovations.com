@@ -1,0 +1,45 @@
+---
+interface Props {
+  name: string;
+  description: string;
+  icon: string;
+  href?: string;
+  status?: string;
+  available?: boolean;
+  alt?: string;
+}
+
+const {
+  name,
+  description,
+  icon,
+  href = "#",
+  status = "",
+  available = true,
+  alt = `${name} app icon`,
+} = Astro.props;
+---
+
+<article class="card app-card">
+
+  <img
+    class="app-icon"
+    src={icon}
+    alt={alt}
+    width="96"
+    height="96"
+  />
+
+  <h3>{name}</h3>
+
+  <p>{description}</p>
+
+  {
+    available ? (
+      <a href={href}>Learn More →</a>
+    ) : (
+      <span class="badge">{status}</span>
+    )
+  }
+
+</article>

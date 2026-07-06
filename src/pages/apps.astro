@@ -1,0 +1,55 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import AppCard from "../components/AppCard.astro";
+---
+
+<BaseLayout
+  title="Apps"
+  description="Explore apps created by HSL Innovations for Apple platforms."
+>
+  <section class="page-hero container">
+    <p class="eyebrow">Apps</p>
+    <h1>Apps by HSL Innovations.</h1>
+    <p>
+      Thoughtfully designed apps for Apple platforms, built with care,
+      privacy, accessibility, and everyday use in mind.
+    </p>
+  </section>
+
+  <section class="section container">
+    <h2>Available and Upcoming</h2>
+
+    <div class="card-grid">
+      <AppCard
+        icon="/icons/flora.png"
+        name="Flora Endless Word Search"
+        description="Relaxing word search puzzles with endless categories, progress tracking, beautiful themes, and accessibility-first design."
+        href="/apps/flora"
+      />
+
+      <AppCard
+        icon="/icons/kickzbrary.png"
+        name="KickzBrary"
+        description="A sneaker collection app designed to help collectors organize, track, and explore their personal sneaker library."
+        available={false}
+        status="Coming Soon"
+      />
+    </div>
+  </section>
+
+  <section class="section soft container">
+    <h2>Support for every app.</h2>
+    <p>
+      Each HSL Innovations app has dedicated support, privacy, and accessibility
+      documentation so users can understand how each app works and how their
+      information is handled.
+    </p>
+
+    <div class="link-list">
+      <a href="/support">Support</a>
+      <a href="/privacy">Privacy Policies</a>
+      <a href="/accessibility">Accessibility</a>
+      <a href="/contact">Contact</a>
+    </div>
+  </section>
+</BaseLayout>

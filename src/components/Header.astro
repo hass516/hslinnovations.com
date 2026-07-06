@@ -1,0 +1,43 @@
+---
+const currentPath = Astro.url.pathname;
+
+const isActive = (path: string) => {
+  if (path === "/") {
+    return currentPath === "/";
+  }
+
+  return currentPath === path || currentPath.startsWith(`${path}/`);
+};
+---
+
+<header class="site-header">
+  <div class="container">
+    <a class="logo" href="/">
+      <span class="logo-mark">HSL</span>
+      <span>HSL Innovations</span>
+    </a>
+
+    <nav aria-label="Primary navigation">
+      <ul class="nav-links">
+        <li>
+          <a href="/apps" class:list={{ active: isActive("/apps") }}>Apps</a>
+        </li>
+        <li>
+          <a href="/about" class:list={{ active: isActive("/about") }}>About</a>
+        </li>
+        <li>
+          <a href="/support" class:list={{ active: isActive("/support") }}>Support</a>
+        </li>
+        <li>
+          <a href="/privacy" class:list={{ active: isActive("/privacy") }}>Privacy</a>
+        </li>
+        <li>
+          <a href="/accessibility" class:list={{ active: isActive("/accessibility") }}>Accessibility</a>
+        </li>
+        <li>
+          <a href="/contact" class:list={{ active: isActive("/contact") }}>Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>

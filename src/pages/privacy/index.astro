@@ -1,0 +1,40 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import AppLinkCard from "../../components/AppLinkCard.astro";
+---
+
+<BaseLayout
+  title="Privacy Policies"
+  description="Privacy policies for HSL Innovations applications."
+>
+  <section class="page-hero container">
+    <p class="eyebrow">Privacy</p>
+    <h1>Privacy Policies</h1>
+    <p>
+      Every HSL Innovations app has its own privacy policy so you always know
+      what information is collected and how it is used.
+    </p>
+  </section>
+
+  <section class="content-card">
+    <h2>Select an App</h2>
+
+    <div class="link-list">
+
+  <AppLinkCard
+    title="Flora Endless Word Search"
+    subtitle="View Privacy Policy"
+    icon="/icons/flora.png"
+    href="/privacy/flora"
+  />
+
+  <AppLinkCard
+    title="KickzBrary"
+    subtitle="Privacy Policy (Coming Soon)"
+    icon="/icons/kickzbrary.png"
+    href="/privacy/kickzbrary"
+  />
+
+</div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,38 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import AppLinkCard from "../../components/AppLinkCard.astro";
+---
+
+<BaseLayout
+  title="Support"
+  description="Support resources for HSL Innovations applications."
+>
+  <section class="page-hero container">
+    <p class="eyebrow">Support</p>
+    <h1>How can we help?</h1>
+    <p>
+      Find help, troubleshooting information, and support resources for
+      HSL Innovations apps.
+    </p>
+  </section>
+
+  <section class="content-card">
+    <h2>Select an App</h2>
+
+    <div class="link-list">
+      <AppLinkCard
+        title="Flora Endless Word Search"
+        subtitle="Get Help with Flora"
+        icon="/icons/flora.png"
+        href="/support/flora"
+      />
+
+      <AppLinkCard
+        title="KickzBrary"
+        subtitle="Support (Coming Soon)"
+        icon="/icons/kickzbrary.png"
+        href="/support/kickzbrary"
+      />
+    </div>
+  </section>
+</BaseLayout>

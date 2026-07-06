@@ -1,0 +1,38 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import AppLinkCard from "../../components/AppLinkCard.astro";
+---
+
+<BaseLayout
+  title="Accessibility"
+  description="Accessibility documentation for HSL Innovations applications."
+>
+  <section class="page-hero container">
+    <p class="eyebrow">Accessibility</p>
+    <h1>Accessibility</h1>
+    <p>
+      HSL Innovations is committed to building apps that are accessible,
+      approachable, and thoughtfully designed for more people.
+    </p>
+  </section>
+
+  <section class="content-card">
+    <h2>Select an App</h2>
+
+    <div class="link-list">
+      <AppLinkCard
+        title="Flora Endless Word Search"
+        subtitle="View Accessibility Information"
+        icon="/icons/flora.png"
+        href="/accessibility/flora"
+      />
+
+      <AppLinkCard
+        title="KickzBrary"
+        subtitle="Accessibility Information (Coming Soon)"
+        icon="/icons/kickzbrary.png"
+        href="/accessibility/kickzbrary"
+      />
+    </div>
+  </section>
+</BaseLayout>

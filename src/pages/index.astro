@@ -1,17 +1,88 @@
 ---
-
+import BaseLayout from "../layouts/BaseLayout.astro";
+import AppCard from "../components/AppCard.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout
+  title="HSL Innovations"
+  description="Thoughtfully designed apps for Apple platforms."
+>
+
+<section class="hero container">
+
+  <p class="eyebrow">
+    Built with Swift
+  </p>
+
+  <h1>
+    Thoughtfully designed apps for Apple platforms.
+  </h1>
+
+  <p class="hero-text">
+    HSL Innovations creates beautifully designed apps that are
+    simple, intuitive, privacy-minded, and built with care.
+  </p>
+
+  <div class="hero-actions">
+
+    <a class="button primary" href="/apps">
+      View Apps
+    </a>
+
+    <a class="button secondary" href="/support">
+      Get Support
+    </a>
+
+  </div>
+
+</section>
+
+<section class="section container">
+
+  <h2>Our Apps</h2>
+
+  <div class="card-grid">
+
+    <AppCard
+      icon="/icons/flora.png"
+      name="Flora Endless Word Search"
+      description="Relaxing word search puzzles with endless categories, beautiful accessibility, and a calming experience."
+      href="/apps/flora"
+    />
+
+    <AppCard
+      icon="/icons/kickzbrary.png"
+      name="KickzBrary"
+      description="Organize, track, and explore your sneaker collection."
+      available={false}
+      status="Coming Soon"
+    />
+
+  </div>
+
+</section>
+
+<section class="section soft container">
+
+  <h2>Support & Privacy</h2>
+
+  <p>
+    Find support, privacy policies, accessibility information,
+    and documentation for every HSL Innovations app.
+  </p>
+
+  <div class="link-list">
+
+    <a href="/support">Support</a>
+
+    <a href="/privacy">Privacy Policy</a>
+
+    <a href="/accessibility">Accessibility</a>
+
+    <a href="/contact">Contact</a>
+
+  </div>
+
+</section>
+
+</BaseLayout>
