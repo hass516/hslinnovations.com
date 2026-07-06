@@ -56,5 +56,14 @@ const pageTitle =
             }
         });
     </script>
+    <script>
+        const menuButton = document.querySelector(".menu-toggle");
+        const siteHeader = document.querySelector(".site-header");
+
+        menuButton?.addEventListener("click", () => {
+            const isOpen = siteHeader?.classList.toggle("menu-open");
+            menuButton.setAttribute("aria-expanded", String(isOpen));
+        });
+</script>
   </body>
 </html>
