@@ -7,6 +7,7 @@ interface Props {
   status?: string;
   available?: boolean;
   alt?: string;
+  linkText?: string;
 }
 
 const {
@@ -17,6 +18,7 @@ const {
   status = "",
   available = true,
   alt = `${name} app icon`,
+  linkText = "Learn More →",
 } = Astro.props;
 ---
 
@@ -36,7 +38,7 @@ const {
 
   {
     available ? (
-      <a href={href}>Learn More →</a>
+      <a href={href}>{linkText}</a>
     ) : (
       <span class="badge">{status}</span>
     )

@@ -529,6 +529,26 @@ p {
   padding-left: 1.2rem;
 }
 
+.app-store-badge {
+  display: inline-block;
+  margin: 21px 21px 21px 0;
+  line-height: 0;
+}
+
+.app-store-badge img {
+  display: block;
+  width: 245px;
+  height: 82px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.content-card .apple-legal {
+  color: var(--muted);
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+
 /* Animations */
 
 @keyframes fadeUp {
