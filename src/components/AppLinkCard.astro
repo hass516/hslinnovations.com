@@ -3,7 +3,7 @@ interface Props {
   title: string;
   subtitle: string;
   icon: string;
-  href: string;
+  href?: string;
   alt?: string;
 }
 
@@ -14,9 +14,15 @@ const {
   href,
   alt = `${title} app icon`,
 } = Astro.props;
+
+const Tag = href ? "a" : "div";
 ---
 
-<a href={href} class="app-link">
+<Tag
+  href={href}
+  class:list={["app-link", { "app-link-disabled": !href }]}
+  aria-disabled={href ? undefined : "true"}
+>
 
     <img
         src={icon}
@@ -32,4 +38,4 @@ const {
 
     </div>
 
-</a>
+</Tag>

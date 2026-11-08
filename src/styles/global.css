@@ -365,6 +365,13 @@ p {
   text-decoration: none;
 }
 
+.card .card-status {
+  display: inline-flex;
+  align-items: center;
+  color: var(--accent);
+  font-weight: 700;
+}
+
 .app-icon {
   display: block;
   width: 96px;
@@ -441,6 +448,19 @@ p {
 
 .app-link:hover img {
   transform: scale(1.05);
+}
+
+.app-link-disabled {
+  padding: 16px 18px;
+  background: var(--background);
+  border-radius: var(--radius-small);
+  color: var(--text);
+  font-weight: 700;
+  cursor: default;
+}
+
+.app-link-disabled:hover img {
+  transform: none;
 }
 
 .app-link strong {
